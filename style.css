@@ -65,6 +65,10 @@ body{
   	border: 2px solid hsl(246, 25%, 77%);
 }
 
+::-webkit-input-placeholder{
+    font-weight: bold;
+}
+
 button{
     width: 100%;
     padding: 15px 20px;
@@ -101,4 +105,4 @@ button{
         margin: 0 auto ; 
     }
     
-  }
+}
