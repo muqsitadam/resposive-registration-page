@@ -22,15 +22,26 @@
             <div class="register">
                 <p class="free-trial"><b>Try it free for 7 days</b> then &#36;20/mo. thereafter</p>
                 <form class="form" action="#">
-                    <input class="input" type="text" name="firstname" id="" placeholder="First Name" required ><br>
-                    <input class="input" type="text" name="lastname" id="" placeholder="Last Name" required ><br>
-                    <input class="input" type="email" name="email" id="" placeholder="Email Address" required ><br>
-                    <input class="input" type="password" name="password" id="" placeholder="Password" required ><br>
-                    <button type="submit">CLAIM YOUR FREE TRIAL</button>
-                    <p class="terms">
-                        By clicking the button, you are agreeing to our 
-                        <b><a class="terms-link" href="#">Terms and Services</a></b>
-                    </p>
+                    <div class="input-box">
+                        <div class="input-container" data-error ="this cant be empty">
+                            <input class="input" type="text" name="firstname" id="" placeholder="First Name" required >
+                            <div class="error-message"> First Name cannot be empty</div>
+                        </div>
+                        <div class="input-container" data-error ="this cant be empty">
+                            <input class="input" type="text" name="lastname" id="" placeholder="Last Name" required >
+                            <div class="error-message"> Last Name cannot be empty</div>
+                        </div>
+                        <div class="input-container" data-error ="this cant be empty">
+                            <input class="input" type="email" name="email" id="" placeholder="Email Address" required >
+                            <div class="error-message"> Looks like this is not an email</div>
+                        </div >
+                        <div class="input-container" data-error ="this cant be empty">
+                            <input class="input" type="password" name="password" id="" placeholder="Password" required >
+                            <div class="error-message"> Password cannot be empty</div>
+                        </div>
+                        <input class="button" type="submit" name="submit" value="CLAIM YOUR FREE TRIAL">
+                        <div class="terms">By clicking the button, you are agreeing to our <b><a class="terms-link" href="#">Terms and Services</a></b></div>
+                    </div>
                 </form>
             </div>
         </div>
