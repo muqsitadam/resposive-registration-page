@@ -15,13 +15,13 @@ body{
 
 .container{
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     height: 600px;
     padding: 10px;
 }
 
 .info{
-    width: 70%;
+    width: 80%;
     margin: auto ; 
 }
 
@@ -83,15 +83,9 @@ body{
     outline: 2px solid transparent;
 }
 
-/* input[type=email]:invalid:focus::-webkit-input-placeholder{
-    color:hsl(0, 100%, 74%);
-} */
-
 ::-webkit-input-placeholder{
     font-weight: bold;
 }
-
-
 
 .input{
     padding: 10px 20px;
@@ -118,6 +112,9 @@ body{
 
 .terms{
     color: gray;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 15px;
 }
 
 .terms-link{
